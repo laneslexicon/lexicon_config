@@ -1,0 +1,24 @@
+/* lines beginning with - are ignored by the loader */
+.hi { font-family : Fira Sans;font-size : 14px;font-style : italic; line-heigth : 40px}
+.arabic               { font-family :Amiri;font-size  : 20px; }
+.arabichead           { font-family :Amiri;font-size : 22px;font-weight : bold; }
+.arabicquote          { font-family :Amiri;font-size : 24px;font-weight : bold;text-align:middle;width : 100%; }
+.arabicroot           { font-family :Amiri;font-size : 36px;font-weight : bold;margin-left : 50px;line-height : 100px;vertical-align : center; }
+p { line-height : 40px }
+.center { display :inline-block ; vertical-align : middle }
+body { font-family : Fira Sans;font-size : 14px }
+.bseparator { font-size : 14x;font-weight: bolder}
+/* Lanes strict separator */
+.aseparator { font-size : 14px;font-weight : bolder}
+.main { background-color : white }
+.pagebreak { display : block }
+.supplement { background-color : lightgray }
+.itype {font-family : Fira Sans ; font-weight : normal ; font-size : 14px }
+.arabicinflection { font-family :Amiri;font-style : bold;font-size : 20px; }
+.arabicquoteblock         { width : 400px;font-family :Amiri; }
+.quasi { font-family : Fira Sans  ; font-size : 14px }
+
+.linkword { text-decoration:underline;color : blue }
+.nolinkword { text-decoration:underline;color : red }
+/* do not change */
+.hiddenbreak { font-size : 1px;background-color:white;foreground-color : white }

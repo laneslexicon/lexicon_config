@@ -1,0 +1,26 @@
+QMainWindow { font-size : 12pt;  font-family :  "Fira Sans"}
+QListWidget#loglist { font-size : 10pt ;font-family : "Fira Sans" }
+QToolButton#navigationby { font-size : 10pt }
+
+QMenu { font-size : 10pt ;font-family : "Fira Sans" }
+QMenuBar { font-size : 10pt; font-family :  "Fira Sans"}
+QMenu#entrycontextmenu { font-size : 10pt }
+QTableWidget::item {selection-background-color : lightblue }
+QWidget#notes { font-size : 10pt;font-family :  "Fira Sans"}
+/*
+The width of the tab bar is not adjusted to match the width of the displayed text
+so we have to specify a reasonable width using minimum-width the column labels
+*/
+QTabBar#arabicpagetab::tab               { font-family :Amiri;text-align:left;width : 200px; }
+
+ImLineEdit#arabicedit                        { font-family :Amiri;font-size : 16px; }
+
+/* in the head word search results widget */
+
+QSplitter::handle { background-color : gray }
+
+QTextBrowser { line-height : 60px; font-size : 14px }
+
+QTabBar#entrytabs::tab:focus {    background: o#999999 }
+/* font size of the place text in statusbar */
+QLabel#placeindicator { font-size : 10px ; }

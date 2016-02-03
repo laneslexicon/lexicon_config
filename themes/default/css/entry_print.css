@@ -1,0 +1,22 @@
+
+.hi { font-family : Fira Sans;font-size : 12px;font-style : italic; line-heigth : 40px}
+.arabic               { font-family :Amiri;font-size  : 12px; }
+.arabichead           { font-family :Amiri;font-size : 14px;font-weight : bold; }
+.arabicquote          { font-family :Amiri;font-size : 20px;font-weight : bold;text-align:middle;width : 100%; }
+.arabicroot           { font-family :Amiri;font-size : 36px;font-weight : bold;margin-left : 50px;line-height : 100px;vertical-align : center; }
+p { line-height : 40px }
+.center { display :inline-block ; vertical-align : middle;line-height : normal }
+.nolink { color : red }
+body { font-family : Fira Sans;font-size : 12px;line-height : 40px }
+.bseparator { font-size : 12px}
+.aseparator { font-size : 12px}
+.main { background-color : white }
+.pagebreak { display : block }
+.entry { margin-left : 30px; font-family : Droid Sans ;font-size : 12px; line-height : 40px}
+.supplement { background-color : lightgray }
+.itype {font-family : Fira Sans Bold; font-style : bold ; font-size : 12px }
+.arabicinflection { font-family :Amiri;font-style : bold;font-size : 18px; }
+.arabicquoteblock         { width : 400px;font-family :Amiri; }
+a:link { text-decoration : none; color : black }
+a:visited { text-decoration : none; color : black }
+.hiddenbreak { font-size : 1px;background-color:white;foreground-color : white }
