@@ -109,6 +109,8 @@
                 
                     <li><a class="toctree-l4" href="#context-menu">Context menu</a></li>
                 
+                    <li><a class="toctree-l4" href="#printing">Printing</a></li>
+                
                     <li><a class="toctree-l4" href="#zooming">Zooming</a></li>
                 
                     <li><a class="toctree-l4" href="#text-width">Text width</a></li>
@@ -341,7 +343,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../errors/">Reporting errors</a>
+        <a class="" href="../../other/errors/">Reporting errors</a>
         
     </li>
 
@@ -452,6 +454,13 @@
             <li>
     <ul class="subnav">
     <li><span>Lane's Preface</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../lane/note/">Note</a>
+        
+    </li>
 
         
             
@@ -571,12 +580,43 @@
 <p>There two sections: the upper actions apply to the current entry item, the lower to all items in the current tab.</p>
 <p>Further information about notes can be found <a href="../notes/">here</a> and bookmarks <a href="../bookmarks/">here</a>.</p>
 <p>Text can be selected with the mouse or the context menu and copied to the clipboard. (The context menu item "Copy" will copy all the selected text, not just that of the currenty entry.)</p>
+<h4 id="printing">Printing</h4>
+<p>An individual headword or the root and its its derivatives can be printed. Further information about how to setup printer is described <a href="../../options/options_printer/">here</a>. <a href="../../sample.pdf">This</a> is a sample pdf.</p>
 <h4 id="zooming">Zooming</h4>
-<p>The current page may be zoomed using either the +/- keys or from the toolbar. Each tab has its own zoom level but a default zoom can be set for all tabs using  *Menu -&gt; View -&gt; Set default zoom".</p>
+<p>The current page may be zoomed using either the +/- keys or from the toolbar. Each tab has its own zoom level but a default zoom can be set for all tabs using  <em>Menu -&gt; View -&gt; Set default zoom</em> or via the Options [dialog] (../options/options_entry.md).</p>
 <p>The dialog can retrieve the zoom from the current tab allowing the user to adjust the zoom for the current page and then use the dialog to set that value as the default.</p>
 <p><img alt="Default zoom" src="../../images/defaultzoom.png" /></p>
+<p>This work as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ok</td>
+<td>Set the default value for all new tabs from the spin box</td>
+</tr>
+<tr>
+<td>Get from current tab</td>
+<td>Populate the spin box with the zoom from the current tab</td>
+</tr>
+<tr>
+<td>Set for current tab</td>
+<td>Set the zoom for the current tab from the spin box</td>
+</tr>
+<tr>
+<td>Apply zoom to all tabs</td>
+<td>If Ok, is clicked, sets the zoom for all open tabs from the spin box</td>
+</tr>
+</tbody>
+</table>
 <h4 id="text-width">Text width</h4>
-<p>The text width (in pixels) of the entries can be adjusted in a similiar fashion to the zoom but using <em>Menu -&gt; View -&gt; set default text width</em></p>
+<p>If the user maximizes the application or otherwise increase its width, the text width will not automatically increase. This must be done manually using either the <em>Menu -&gt; Entry -&gt; Widen</em> or the toolbar buttons widen <img alt="widen" src="../../images/zoom-fit-width.png" /> and narrow <img alt="narrow" src="../../images/zoom-fit-narrow.png" />.</p>
+<p>While the text in each tab can be adjusted independently, there is a default text width that can be set via the Options <a href="../../options/options_entry/">dialog</a>. This setting only applies to new tabs.</p>
+<p>To adjust the text width for all current tabs use  <em>Menu -&gt; View -&gt; Set text width</em> which works in a similar to fashion to the zoom dialog described immediately above.</p>
               
             </div>
           </div>
