@@ -9,8 +9,8 @@ In OSX this is the Resources directory of the application bundle.
 
 Extract one the lexicon.sqlite.7z or lexicon.sqlite.xz to get the uncompressed lexicon database.
 
-| | |
-|-|-|
+| Item|   Description                                          |
+|-------------|-------------------------------------|
 |fonts |  contains freely distributable font files used by the application as defaults fonts
 |themes/default| a full set of configuration files
 |sitemap.ini   | used to load the corroect help page for inline documentation|
