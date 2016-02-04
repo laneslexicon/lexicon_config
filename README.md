@@ -6,14 +6,17 @@ In *nix and Windows this is a subdirectory of the directory in which the executa
 
 In OSX this is the Resources directory of the application bundle.
 
+See [here](http://laneslexicon.github.io/lexicon/site/custom/themes/index.html) for a description of the required directory layout.
+
 
 Extract one the lexicon.sqlite.7z or lexicon.sqlite.xz to get the uncompressed lexicon database.
 
 | Item|   Description                                          |
 |-------------|-------------------------------------|
-|fonts |  contains freely distributable font files used by the application as defaults fonts
-|themes/default| a full set of configuration files
-|sitemap.ini   | used to load the corroect help page for inline documentation|
+| fonts |  contains freely distributable font files used by the application as defaults fonts |
+| themes/default| a full set of configuration files |
+| site         | the in program documentation      |
+| sitemap.ini   | used to load the corroect help page for inline documentation|
 | history.sqlite | empty history database |
 | notes.sqlite   | empty notes database |
 | lexicon.sqlite.xz | a compressed lexicon database using xz compression utility|
