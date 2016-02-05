@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
@@ -687,8 +688,11 @@ make
 </code></pre>
 <h4 id="building-a-local-version-of-the-help-files-for-the-program-documentation">Building a local version of the help files for the program documentation</h4>
 <p>The same help files are used for the program documentation and the documentation/site directory should be copied are to the Resources/site directory after running the ar_markup script.</p>
+<p>The generated help files contain links to googleapis.com, such as:</p>
+<pre><code>&lt;link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'&gt;
 </code></pre>
 <p>This can significantly slow the in-program documentation. One way to remove them on *nix is</p>
+<pre><code>find Resources/site -iname "*.html" -exec perl -i -ne 'print unless /googleapis.com/' {} \;
 </code></pre>
               
             </div>
