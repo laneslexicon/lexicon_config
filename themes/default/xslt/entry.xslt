@@ -11,11 +11,17 @@
   <xsl:output method="html" indent="yes" encoding="utf-8" omit-xml-declaration="yes"/>
   <xsl:template match="/">
   <html>
-    <xsl:comment>XSLT script version 1.2: <xsl:value-of select="$entrytype" /></xsl:comment>
+    <xsl:comment>XSLT script version 1.3: <xsl:value-of select="$entrytype" /></xsl:comment>
 
     <xsl:apply-templates select="//word" />
     <xsl:if test="$entrytype = 'node'">
       <xsl:call-template name="entry" />
+    </xsl:if>
+    <!-- use this parameter value when testing standalone node xml
+         which start with <entryFree>
+         -->
+    <xsl:if test="$entrytype = 'free'">
+      <xsl:apply-templates select="//entryFree" />
     </xsl:if>
   </html>
   </xsl:template>
@@ -393,6 +399,17 @@
                 <xsl:value-of select="text()" />
               </a>
               </span>
+            </xsl:when>
+            <!-- this captures other language entries -->
+            <xsl:when test="name() = 'orth'">
+              <xsl:element name="span">
+                <xsl:if test="@lang">
+                  <xsl:attribute name="class">
+                    <xsl:text>lang-</xsl:text><xsl:value-of select="@lang"/>
+                  </xsl:attribute>
+              </xsl:if>
+              <xsl:value-of select="." />
+              </xsl:element>
             </xsl:when>
             <xsl:when test="name() = 'foreign'">
               <span class="arabic">
