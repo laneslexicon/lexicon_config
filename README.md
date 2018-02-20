@@ -1,3 +1,5 @@
+For an overview of the project see [here](http://laneslexicon.github.io).
+
 This is a "clean" configuration setup for the laneslexicon application.
 
 It should be extracted to the Resources directory.
