@@ -1,17 +1,21 @@
 For an overview of the project see [here](http://laneslexicon.github.io).
 
-This is a "clean" configuration setup for the laneslexicon application.
 
-It should be extracted to the Resources directory.
+This is a "clean" configuration setup for the laneslexicon application; it contains the lexicon database as well as fonts,images, and assorted configuration files.
+
+If you simply wish to download a new database i.e. the Lexicon itself, double-click on "lexicon.sqlite.zip" and then on the "Download button".
+
+The application requires the content of this repository to be in a directory named "Resources".
 
 In *nix and Windows this is a subdirectory of the directory in which the executable is found.
 
-In OSX this is the Resources directory of the application bundle.
+In OSX/macOS this is the Resources directory of the application bundle.
 
 See [here](http://laneslexicon.github.io/lexicon/site/custom/themes/index.html) for a description of the required directory layout.
 
+After placing the contents in the Resources directory, unzip "lexicon.sqlite.zip" to create "lexicon.sqlite".
 
-unzip lexicon.sqlite.zip to lexicon.sqlite in the Resources directory
+The top-level files are folders are:
 
 | Item|   Description                                          |
 |-------------|-------------------------------------|
